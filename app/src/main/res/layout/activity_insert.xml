@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:splitMotionEvents="true"
+        tools:context="com.example.dell.sbi.insert">
+
+
+        <EditText
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Cheque Number"
+
+
+            />
+
+
+        <EditText
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+
+            android:hint="Amount in Words"
+            />
+        <EditText
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:hint="Amount in digit"
+            />
+
+
+
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#d4d4d4"
+            android:hint="Select Date..."
+            android:padding="15dp"
+            android:textColor="#897"
+            android:textColorHint="#090"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:hint="MICR_Code"
+            />
+        <EditText
+            android:id="@+id/text6"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+
+            android:hint="Account Type" />
+        <EditText
+            android:id="@+id/text7"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+
+            android:hint="Transaction Number" />
+        <EditText
+            android:id="@+id/text8"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+
+            android:hint="Bank Name" />
+        <EditText
+            android:id="@+id/text9"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+
+            android:hint="Payee_Acc_Number" />
+        <TextView
+            android:id="@+id/text10"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:textSize="20dp"
+            android:hint="Cheque Stale" />
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/mattext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:textSize="20dp"
+            android:hint="Amount Match" />
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/mat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:id="@+id/mat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/IImageView"
+            android:layout_weight="10"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" />
+        <ImageView
+            android:id="@+id/IImageView1"
+            android:layout_weight="10"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" />
+        <Button
+            android:id="@+id/btncamera"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="Open Camera"
+            android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/text11"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="Submit"
+            android:textColor="@android:color/white" />
+
+
+
+
+    </LinearLayout>
+</ScrollView>
